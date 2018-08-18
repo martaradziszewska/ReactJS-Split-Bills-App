@@ -1,0 +1,123 @@
+
+.groupDashboard {
+	height: 80vh;
+	padding: 0 2rem;
+
+	h2 {
+		text-transform: uppercase;
+		font-size: 0.85rem;
+		font-weight: 900;
+	}
+	.people {
+		padding: 1rem;
+
+		ul {
+			display: flex;
+			justify-content: center;
+
+			li {
+				width: 3rem;
+				height: 3rem;
+				border-radius: 50%;
+				border: 1px solid white;
+				background-color: rgba($color-grey, 0.1);
+				text-align: center;
+				line-height: 3rem;
+				margin: 0.2rem;
+				color: white;
+			}
+		}
+	}
+
+	.owesBox {
+		width: 100%;
+		height: auto;
+		border: 1px solid white;
+		padding: 0.6rem 1rem;
+		background-color: white;
+		border-radius: 5px;
+		box-shadow: 2px 2px 10px 0 dimgrey;
+		h2 {
+			margin-bottom: 1rem;
+			color: dimgrey;
+			text-align: center;
+			
+
+		}
+		.balanceBox {
+			display: flex;
+			justify-content: space-between;
+
+			li {
+				width: 100%;
+				margin-bottom: 0.3rem;
+				padding: 0.2rem;
+				height: auto;
+				color: dimgrey;
+				border: 1px solid dimgrey;
+				text-align: center;
+				background-color: rgba($color-grey, 0.2);
+				border-radius: 5px;
+				span {
+					margin-left: 0.3rem;
+				}
+			}
+			
+		}
+
+	}
+
+	.billList {
+		width: 100%;
+		h2 {
+			text-align: center;
+			font-size: 1rem;
+			margin: 1rem 0;
+			color: white;
+		}
+		.bill {
+			width: 100%;
+			background-color: white;
+			padding: 0.5rem;
+			margin-top: 0.6rem;
+			border-radius: 5px;
+			font-size: 0.75rem;
+			color: dimgrey;
+			font-weight: 600;
+			box-shadow: 2px 2px 10px 0 dimgrey;
+			li {
+				text-transform: uppercase;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+	
+				div {
+					width: 50%;
+					display: flex;
+					justify-content: flex-end;
+				}
+				span {
+				
+					text-transform: lowercase;	
+
+				}
+				.paidBy {
+					margin-left: 0.5rem;
+					width: 50%;
+					height: 1rem;
+					border: 1px solid dimgrey;
+					border-radius: 5px;
+					display: flex;
+					justify-content: center;
+					text-transform: uppercase;
+					padding: 1px;
+		
+				}
+			}
+		}
+	}
+
+
+
+
+}

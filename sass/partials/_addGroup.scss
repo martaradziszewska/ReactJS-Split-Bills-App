@@ -1,0 +1,67 @@
+.addGroup {
+	height: 100vh;
+}
+
+
+.addGroupBox {
+	width: 80%;
+	height: 80vh;
+	margin: 2vh auto 0;
+
+	background-color: white;
+	color: black;
+	border-radius: 5px;
+	box-shadow: 3px 3px 50px 0 dimgrey;
+}
+form {
+		display: flex;
+		flex-direction: column;
+//		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding: 1.5rem 0;
+
+		input {
+			padding: 5px;
+			border: none;
+			border-bottom: 1px solid black;
+			width: 90%;
+			outline: none;
+			margin: 0.5rem;
+		}
+		.counter {
+			margin: 1rem;
+			font-size: 3rem;
+			font-weight: 900;
+			span {
+				padding:1rem;
+				cursor: pointer;
+			}
+		}
+		
+		.addGroupBtn {
+		@include addBtn(black);
+			position: absolute;
+			bottom: 15vh;
+			border: 1px solid black;
+		}
+		.addBillBtn {
+		@include addBtn(black);
+			position: absolute;
+			bottom: 15vh;
+			border: 1px solid black;
+		}
+	}
+		
+		
+		
+	
+	
+	.listOfMembers {
+		display: flex;
+		justify-content: center;
+
+	}
+	
+
+	
