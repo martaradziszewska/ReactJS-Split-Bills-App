@@ -17,7 +17,7 @@
 		background-color: white;
 		border-radius: 5px;
 		padding: 1.3rem;
-		height: 70vh;
+		min-height: 70vh;
 		box-shadow: 3px 3px 40px 0 dimgrey;
 
 
@@ -36,7 +36,7 @@
 		text-transform: uppercase;
 		font-size: 0.9rem;
 
-		margin-top: 1rem;
+
 
 	.splitInputs {
 		display: flex;
@@ -74,14 +74,43 @@
 
 
 	.unequallyInputs {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		height: 180px;
 		li {
 			display: flex;
+			padding: 3px;
+			margin: 0.2rem;
 			justify-content: center;
 			align-items: center;
+			border-radius: 5px;
+			background-color: $color-grey;
+//			border: 1px solid black;
+			width: 50%;
 			input {
 				width: 100%;
+				height: 1rem;
+				background-color:$color-grey; 
+		
 			}
 		}
 
+	}
+}
+
+.paidBySelect {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 0.5rem;
+	
+	.paidySelection {
+		background-color: white;
+		border: 1px solid black;
+		width: 50%;
+		border-radius: 5px;
+		
 	}
 }

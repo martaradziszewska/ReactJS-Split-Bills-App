@@ -9,20 +9,20 @@
 		font-weight: 900;
 	}
 	.people {
-		padding: 1rem;
+		padding-bottom: 1rem;
 
 		ul {
 			display: flex;
 			justify-content: center;
 
 			li {
-				width: 3rem;
-				height: 3rem;
+				min-width: 2.7rem;
+				height: 2.7rem;
 				border-radius: 50%;
 				border: 1px solid white;
 				background-color: rgba($color-grey, 0.1);
 				text-align: center;
-				line-height: 3rem;
+				line-height: 2.7rem;
 				margin: 0.2rem;
 				color: white;
 			}
@@ -42,7 +42,6 @@
 			color: dimgrey;
 			text-align: center;
 			
-
 		}
 		.balanceBox {
 			display: flex;
@@ -58,15 +57,35 @@
 				text-align: center;
 				background-color: rgba($color-grey, 0.2);
 				border-radius: 5px;
+				position: relative;
 				span {
 					margin-left: 0.3rem;
 				}
-			}
-			
-		}
 
+			}	
+			.owners {
+				li {
+					&:after {
+					content: "";
+					display: block;
+					width: 3rem;
+					height: 1px;
+					background-color: dimgrey;
+					position: absolute;
+					left: 100%;
+					top: 50%;
+					}
+					&:before {
+					content: "";
+					display: block;
+				
+					}
+				}
+			}	
+		}
 	}
 
+	
 	.billList {
 		width: 100%;
 		h2 {

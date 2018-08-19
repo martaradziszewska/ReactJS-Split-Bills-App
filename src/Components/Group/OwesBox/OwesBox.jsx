@@ -100,7 +100,9 @@ export default class OwesBox extends React.Component {
 						<ul className="owners">
 							{this.state.owners.map((elem, index) => <li key={index}>{elem.name}<span>{elem.debt}</span></li>)}
 						</ul>
-							
+			
+
+	
 						<ul className="lenders">
 							{this.state.lenders.map((elem, index) => <li key={index}>{elem.name}<span>{elem.debt}</span></li>)}
 						</ul>

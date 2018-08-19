@@ -33,7 +33,7 @@ export default class SplitFormInputs extends React.Component {
 				<div>
 					{checkedOption && <input placeholder="Name of group"></input>}
 					<input name="nameBill" value={this.state.nameBill} placeholder="Name of the bill" onChange={e=>this.handleFormInputs(e)}/>
-					<input placeholder="Date"/>
+
 					<input type="number" step="0.01"  min="0" name="total" value={this.state.total} required placeholder="Total sum" onChange={e=>this.handleFormInputs(e)}/>
 				</div>
 			)
